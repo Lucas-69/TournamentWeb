@@ -11,6 +11,11 @@ class Equipo extends Model
 
     public function competidores()
     {
-        return $this->belongsToMany(competidores::class);
+        return $this->belongsToMany(Competidores::class);
+    }
+
+    public function partidas()
+    {
+        return $this->belongsToMany(Partidas::class);
     }
 }

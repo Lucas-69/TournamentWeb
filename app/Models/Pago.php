@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Pago extends Model
 {
     use HasFactory;
+
+    public function competidores()
+    {
+        return $this->belongsTo(Competidores::class);
+    }
 }

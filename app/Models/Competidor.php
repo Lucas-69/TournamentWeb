@@ -14,4 +14,9 @@ class Competidor extends Model
         return $this->belongsToMany(Equipos::class);
     }
 
+    public function pagos_id()
+    {
+        return $this->hasMany(Pagos_id::class);
+    }
+
 }

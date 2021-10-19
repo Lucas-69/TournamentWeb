@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Partida extends Model
 {
     use HasFactory;
+
+    public function equipos()
+    {
+        return $this->belongsToMany(Equipos::class);
+    }
 }
